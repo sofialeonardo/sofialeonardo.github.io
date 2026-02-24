@@ -25,6 +25,23 @@ layout: default
     {{ content }}
     {% include navlinks.html %}
   </div>
+<hr>
+<div class="post_navi">
+  {% if page.previous %}
+    <a class="post_navi-item nav_prev" href="{{ page.previous.url | relative_url }}">
+      <div class="post_navi-arrow">«</div>
+      <div class="post_navi-label">Previous</div>
+      <span>{{ page.previous.title }}</span>
+    </a>
+  {% endif %}
 
+  {% if page.next %}
+    <a class="post_navi-item nav_next" href="{{ page.next.url | relative_url }}">
+      <div class="post_navi-arrow">»</div>
+      <div class="post_navi-label">Next</div>
+      <span>{{ page.next.title }}</span>
+    </a>
+  {% endif %}
+</div>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
