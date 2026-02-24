@@ -1,7 +1,6 @@
 title: "Mema"
 author: "Sofia Leonardo"
-description: "I don't know what I'm doing." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
-
+description: "I don't know what I'm doing." 
 email: "sofiacleonardo2004@gmail.com"
 github_username: "sofialeonardo"
 
@@ -9,8 +8,6 @@ github_username: "sofialeonardo"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 theme: "minima"
-
-rss: rss
 
 kramdown:
   syntax_highlighter_opts:
